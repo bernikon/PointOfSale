@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import pl.pk.pointofsale.models.MysqlConnector;
+import pl.pk.pointofsale.models.Utils;
 import pl.pk.pointofsale.models.dao.ProductDao;
 import pl.pk.pointofsale.models.dao.impl.ProductDaoImpl;
 
@@ -31,9 +32,24 @@ public class Controller implements Initializable {
 
     }
 
+    private boolean checkBarcodeData() {
+        String barcode = textBarcode.getText();
+
+        if (barcode.isEmpty()) {
+            Utils.createSimpleDialog("Nieprawidłowy kod kreskowy");
+            return false;
+        }
+        return true;
+    }
+
+
     private void showProduct() {
         String barcode = textBarcode.getText();
- // ...
+        // ...
 
+
+        if (!checkBarcodeData()) {
+            return;
+        }
     }
 }
