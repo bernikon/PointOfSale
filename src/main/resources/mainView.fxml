@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pk.pointofsale.controllers.Controller">
+   <children>
+      <Button fx:id="buttonEnter" layoutX="399.0" layoutY="48.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="108.0" text="Enter">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TextField fx:id="textBarcode" layoutX="42.0" layoutY="43.0" prefHeight="41.0" prefWidth="312.0" promptText="write the code" />
+      <TextField fx:id="textLCD" layoutX="42.0" layoutY="120.0" prefHeight="239.0" prefWidth="312.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="42.0" layoutY="22.0" prefHeight="21.0" prefWidth="264.0" text="Barcode scanner">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="99.0" prefHeight="21.0" prefWidth="264.0" text="LCD Dysplay">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonExit" layoutX="399.0" layoutY="224.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="108.0" text="Exit&amp;Print">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
