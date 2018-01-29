@@ -36,7 +36,7 @@ public class Controller implements Initializable {
         String barcode = textBarcode.getText();
 
         if (barcode.isEmpty()) {
-            Utils.createSimpleDialog("Nieprawidłowy kod kreskowy");
+            Utils.createSimpleDialog("Info", "Wprowadzanie kodu kreskowego", "Nieprawidłowy kod kreskowy");
             return false;
         }
         return true;
