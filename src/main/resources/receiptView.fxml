@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pk.pointofsale.controllers.ReceiptController">
+   <children>
+      <TextField fx:id="textReceipt" layoutX="14.0" layoutY="98.0" prefHeight="201.0" prefWidth="222.0" />
+      <Label layoutX="72.0" layoutY="24.0" prefHeight="21.0" prefWidth="106.0" text="Cash Receipt">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="70.0" text="Order" />
+      <Label layoutX="143.0" layoutY="70.0" prefHeight="21.0" prefWidth="49.0" text="price" />
+      <Label layoutX="72.0" layoutY="324.0" prefHeight="21.0" prefWidth="69.0" text="Total:" />
+      <TextField fx:id="textTotalPayment" layoutX="129.0" layoutY="319.0" prefHeight="31.0" prefWidth="106.0" />
+   </children>
+</AnchorPane>
